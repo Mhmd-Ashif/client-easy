@@ -1,5 +1,4 @@
 "use client";
-import { useRouter } from "next/navigation";
 import About from "@/components/About";
 import Contact from "@/components/Contact";
 import Footer from "@/components/Footer";
@@ -10,7 +9,6 @@ import { FloatingNavDemo } from "@/components/FloatingDemo";
 import { useEffect } from "react";
 
 export default function Home() {
-  const router = useRouter();
 
   useEffect(() => {
     const hash = window.location.hash;

@@ -1,7 +1,6 @@
 "use client";
 import React, { useState } from "react";
 import { MultiStepLoader as Loader } from "./MultiStepLoader";
-import { TicketCheck } from "lucide-react";
 
 const loadingStates = [
   {

@@ -2,7 +2,6 @@
 
 import type React from "react";
 import { useState, useEffect, useRef } from "react";
-import { ChevronLeft, ChevronRight, Star, Quote } from "lucide-react";
 import { InfiniteMovingCardsDemo } from "./MovingCardFinal";
 import {
   useMotionValue,
@@ -128,19 +127,7 @@ const Testimonials: React.FC = () => {
     }, 300);
   };
 
-  const nextTestimonial = () => {
-    changeTestimonial((currentIndex + 1) % testimonials.length);
-  };
-
-  const prevTestimonial = () => {
-    changeTestimonial(
-      (currentIndex - 1 + testimonials.length) % testimonials.length
-    );
-  };
-
-  const goToTestimonial = (index: number) => {
-    changeTestimonial(index);
-  };
+ 
 
   return (
     <section

@@ -2,6 +2,7 @@
 import { useParams, useRouter } from "next/navigation";
 import { ArrowLeft, Check, Star, Clock, Users, Award } from "lucide-react";
 import { Suspense } from "react";
+import Image from "next/image";
 
 export default function ProductDetail() {
   const params = useParams();
@@ -290,7 +291,7 @@ export default function ProductDetail() {
             </div>
 
             <div className="relative">
-              <img
+              <Image
                 src={product.image}
                 alt={product.name}
                 className="rounded-lg shadow-2xl w-full h-64 md:h-80 object-cover"
