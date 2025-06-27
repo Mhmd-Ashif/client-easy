@@ -1,0 +1,40 @@
+"use client";
+import { useRouter } from "next/navigation";
+import About from "@/components/About";
+import Contact from "@/components/Contact";
+import Footer from "@/components/Footer";
+import Hero from "@/components/Hero";
+import Products from "@/components/Products";
+import Testimonials from "@/components/Testimonials";
+import { FloatingNavDemo } from "@/components/FloatingDemo";
+import { useEffect } from "react";
+
+export default function Home() {
+  const router = useRouter();
+
+  useEffect(() => {
+    const hash = window.location.hash;
+
+    if (hash) {
+      const el = document.querySelector(hash);
+      if (el) {
+        setTimeout(() => {
+          el.scrollIntoView({ behavior: "smooth" });
+          history.replaceState(null, "", window.location.pathname);
+        }, 100);
+      }
+    }
+  }, []);
+
+  return (
+    <main>
+      <FloatingNavDemo />
+      <Hero />
+      <About />
+      <Products />
+      <Testimonials />
+      <Contact />
+      <Footer />
+    </main>
+  );
+}
