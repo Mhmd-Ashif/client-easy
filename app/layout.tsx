@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono, Manrope, Space_Mono } from "next/font/google";
+import { Geist, Geist_Mono, Manrope} from "next/font/google";
 import "./globals.css";
 
 const geistSans = Geist({
@@ -17,10 +17,7 @@ const manrope = Manrope({
   subsets: ["latin"],
 });
 
-const spaceMono = Space_Mono({
-  variable: "--font-space-mono",
-  weight: ["400", "700"],
-});
+
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -36,7 +33,7 @@ export default function RootLayout({
     <html lang="en">
       <body
         suppressHydrationWarning
-        className={`${geistSans.variable} ${geistMono.variable} ${manrope.variable} ${spaceMono.variable} font-manrope antialiased`}
+        className={`${geistSans.variable} ${geistMono.variable} ${manrope.variable}  font-manrope antialiased`}
       >
         {children}
       </body>
