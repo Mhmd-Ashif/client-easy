@@ -124,6 +124,8 @@ const Products: React.FC = () => {
                 <Image
                   src={product.image || "/placeholder.svg"}
                   alt={product.name}
+                  width={100}
+                  height={100}
                   className="w-full h-40 md:h-48 object-cover group-hover:scale-110 transition-transform duration-500"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>

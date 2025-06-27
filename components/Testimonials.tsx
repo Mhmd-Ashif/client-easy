@@ -11,18 +11,8 @@ import {
   useInView,
 } from "motion/react";
 
-interface Testimonial {
-  id: number;
-  name: string;
-  company: string;
-  role: string;
-  content: string;
-  avatar: string;
-  rating: number;
-}
 const Testimonials: React.FC = () => {
-  const [currentIndex, setCurrentIndex] = useState(0);
-  const [isAnimating, setIsAnimating] = useState(false);
+  const [isAnimating] = useState(false);
 
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true, amount: 0.2 });
@@ -54,78 +44,6 @@ const Testimonials: React.FC = () => {
       };
     }
   }, [projects, rating, response, satisfaction, isInView]);
-
-  const testimonials: Testimonial[] = [
-    {
-      id: 1,
-      name: "Sarah Johnson",
-      company: "TechStart Inc.",
-      role: "CEO & Founder",
-      content:
-        "From concept to completion, EliteDesign delivered outstanding results. Their creative approach to our wellness brand perfectly captured our values and resonated with our target audience.",
-      avatar: "/placeholder.svg?height=100&width=100",
-      rating: 5,
-    },
-    {
-      id: 2,
-      name: "Michael Chen",
-      company: "Global Ventures",
-      role: "Marketing Director",
-      content:
-        "From concept to completion, EliteDesign delivered outstanding results. Their creative approach to our wellness brand perfectly captured our values and resonated with our target audience.",
-      avatar: "/placeholder.svg?height=100&width=100",
-      rating: 5,
-    },
-    {
-      id: 3,
-      name: "Emily Rodriguez",
-      company: "Creative Studios",
-      role: "Art Director",
-      content:
-        "From concept to completion, EliteDesign delivered outstanding results. Their creative approach to our wellness brand perfectly captured our values and resonated with our target audience.",
-      avatar: "/placeholder.svg?height=100&width=100",
-      rating: 5,
-    },
-    {
-      id: 4,
-      name: "David Thompson",
-      company: "E-commerce Plus",
-      role: "Operations Manager",
-      content:
-        "From concept to completion, EliteDesign delivered outstanding results. Their creative approach to our wellness brand perfectly captured our values and resonated with our target audience.",
-      avatar: "/placeholder.svg?height=100&width=100",
-      rating: 5,
-    },
-    {
-      id: 5,
-      name: "Lisa Park",
-      company: "Wellness Co.",
-      role: "Brand Manager",
-      content:
-        "From concept to completion, EliteDesign delivered outstanding results. Their creative approach to our wellness brand perfectly captured our values and resonated with our target audience.",
-      avatar: "/placeholder.svg?height=100&width=100",
-      rating: 5,
-    },
-  ];
-
-  useEffect(() => {
-    const timer = setInterval(() => {
-      changeTestimonial((currentIndex + 1) % testimonials.length);
-    }, 6000);
-    return () => clearInterval(timer);
-  });
-
-  const changeTestimonial = (newIndex: number) => {
-    if (newIndex === currentIndex || isAnimating) return;
-
-    setIsAnimating(true);
-    setTimeout(() => {
-      setCurrentIndex(newIndex);
-      setTimeout(() => {
-        setIsAnimating(false);
-      }, 50);
-    }, 300);
-  };
 
   return (
     <section
