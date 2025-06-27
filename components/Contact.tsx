@@ -104,8 +104,8 @@ const Contact: React.FC = () => {
               Thank You!
             </h3>
             <p className="text-slate-600 leading-relaxed text-sm md:text-base">
-              Your message has been sent successfully. We'll get back to you
-              within 24 hours.
+              {`Your message has been sent successfully. We'll get back to you
+              within 24 hours.`}
             </p>
           </div>
         </div>
@@ -121,11 +121,11 @@ const Contact: React.FC = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-12 md:mb-16">
           <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-white mb-3 md:mb-4">
-            Let's Start Your Project
+            {`Let's Start Your Project`}
           </h2>
           <p className="text-lg md:text-xl text-blue-100 max-w-3xl mx-auto leading-relaxed px-4">
-            Ready to transform your vision into reality? Get in touch with us
-            today and let's discuss how we can help your business grow.
+            {`Ready to transform your vision into reality? Get in touch with us
+            today and let's discuss how we can help your business grow.`}
           </p>
         </div>
 
@@ -137,9 +137,9 @@ const Contact: React.FC = () => {
                 Get in Touch
               </h3>
               <p className="text-blue-100 leading-relaxed mb-6 md:mb-8 text-sm md:text-base">
-                We'd love to hear about your project and discuss how we can help
+                {`We'd love to hear about your project and discuss how we can help
                 bring your ideas to life. Choose the best way to reach us, and
-                we'll respond promptly.
+                we'll respond promptly.`}
               </p>
             </div>
 

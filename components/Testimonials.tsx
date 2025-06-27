@@ -53,7 +53,7 @@ const Testimonials: React.FC = () => {
         controls4.stop();
       };
     }
-  }, [isInView]);
+  }, [projects, rating, response, satisfaction, isInView]);
 
   const testimonials: Testimonial[] = [
     {
@@ -113,7 +113,7 @@ const Testimonials: React.FC = () => {
       changeTestimonial((currentIndex + 1) % testimonials.length);
     }, 6000);
     return () => clearInterval(timer);
-  }, [currentIndex, testimonials.length]);
+  });
 
   const changeTestimonial = (newIndex: number) => {
     if (newIndex === currentIndex || isAnimating) return;
@@ -126,8 +126,6 @@ const Testimonials: React.FC = () => {
       }, 50);
     }, 300);
   };
-
- 
 
   return (
     <section

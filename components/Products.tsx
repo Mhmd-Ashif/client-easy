@@ -11,6 +11,7 @@ interface Product {
   features: string[];
   price: string;
 }
+import Image from "next/image";
 
 const Products: React.FC = () => {
   const products: Product[] = [
@@ -120,7 +121,7 @@ const Products: React.FC = () => {
               className="bg-white rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 overflow-hidden group"
             >
               <div className="relative overflow-hidden">
-                <img
+                <Image
                   src={product.image || "/placeholder.svg"}
                   alt={product.name}
                   className="w-full h-40 md:h-48 object-cover group-hover:scale-110 transition-transform duration-500"

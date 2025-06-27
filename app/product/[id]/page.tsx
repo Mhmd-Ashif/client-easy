@@ -1,6 +1,6 @@
 "use client";
 import { useParams, useRouter } from "next/navigation";
-import { ArrowLeft, Check, Star, Clock, Users, Award } from "lucide-react";
+import { ArrowLeft, Check, Clock, Users, Award } from "lucide-react";
 import { Suspense } from "react";
 import Image from "next/image";
 
@@ -308,7 +308,7 @@ export default function ProductDetail() {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 md:gap-12">
             <div>
               <h2 className="text-2xl md:text-3xl font-bold text-slate-800 mb-6 md:mb-8">
-                What's Included
+                {`What's Included`}
               </h2>
               <div className="space-y-3 md:space-y-4">
                 {product.detailedFeatures.map((feature, index) => (
@@ -442,7 +442,7 @@ export default function ProductDetail() {
             Ready to Get Started?
           </h2>
           <p className="text-lg md:text-xl text-blue-100 mb-6 md:mb-8">
-            Let's discuss your project and create something amazing together.
+            {`Let's discuss your project and create something amazing together.`}
           </p>
           <button
             onClick={scrollToContact}
