@@ -292,8 +292,10 @@ export default function ProductDetail() {
 
             <div className="relative">
               <Image
-                src={product.image}
-                alt={product.name}
+                src={"/placeholder.svg"}
+                alt={"Placeholder"}
+                width={100}
+                height={100}
                 className="rounded-lg shadow-2xl w-full h-64 md:h-80 object-cover"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-blue-900/20 to-transparent rounded-lg"></div>

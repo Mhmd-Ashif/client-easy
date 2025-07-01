@@ -65,7 +65,7 @@ export const InfiniteMovingCards = ({
       } else if (speed === "normal") {
         containerRef.current.style.setProperty("--animation-duration", "40s");
       } else {
-        containerRef.current.style.setProperty("--animation-duration", "90s");
+        containerRef.current.style.setProperty("--animation-duration", "150s");
       }
     }
   };
@@ -82,7 +82,8 @@ export const InfiniteMovingCards = ({
         className={cn(
           "flex w-max min-w-full shrink-0 flex-nowrap gap-4 py-4",
           start && "animate-scroll",
-          pauseOnHover && "hover:[animation-play-state:paused]"
+          pauseOnHover &&
+            "motion-safe:hover:[animation-play-state:paused] motion-safe:active:[animation-play-state:paused]"
         )}
       >
         {items.map((item) => (

@@ -43,62 +43,6 @@ const Products: React.FC = () => {
       ],
       price: "Starting at $5,000",
     },
-    {
-      id: 3,
-      name: "UI/UX Design Services",
-      description:
-        "User-centered design solutions for mobile apps and web applications with focus on usability and conversion.",
-      image: "/placeholder.svg",
-      features: [
-        "User Research",
-        "Wireframing",
-        "Prototyping",
-        "Usability Testing",
-      ],
-      price: "Starting at $3,500",
-    },
-    {
-      id: 4,
-      name: "E-commerce Solutions",
-      description:
-        "Complete e-commerce platform design and development with payment integration and inventory management.",
-      image: "/placeholder.svg",
-      features: [
-        "Online Store Design",
-        "Payment Integration",
-        "Inventory Management",
-        "Analytics Setup",
-      ],
-      price: "Starting at $7,500",
-    },
-    {
-      id: 5,
-      name: "Digital Marketing Assets",
-      description:
-        "Social media graphics, email templates, banner ads, and other digital marketing materials.",
-      image: "/placeholder.svg",
-      features: [
-        "Social Media Graphics",
-        "Email Templates",
-        "Banner Ads",
-        "Marketing Collateral",
-      ],
-      price: "Starting at $1,200",
-    },
-    {
-      id: 6,
-      name: "Print Design Services",
-      description:
-        "Professional print design for brochures, flyers, posters, packaging, and other marketing materials.",
-      image: "/placeholder.svg",
-      features: [
-        "Brochure Design",
-        "Packaging Design",
-        "Poster Design",
-        "Print Preparation",
-      ],
-      price: "Starting at $800",
-    },
   ];
 
   return (
@@ -114,7 +58,7 @@ const Products: React.FC = () => {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
+        <div className="grid sm:grid-cols-1 lg:grid-cols-2  gap-6 md:gap-8">
           {products.map((product) => (
             <div
               key={product.id}
