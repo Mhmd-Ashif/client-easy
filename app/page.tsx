@@ -9,7 +9,6 @@ import { FloatingNavDemo } from "@/components/FloatingDemo";
 import { useEffect } from "react";
 
 export default function Home() {
-
   useEffect(() => {
     const hash = window.location.hash;
 

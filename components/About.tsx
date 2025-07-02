@@ -11,7 +11,7 @@ const About: React.FC = () => {
       title: "Innovation",
       amount: 0.2,
       description:
-        "We push boundaries and embrace cutting-edge technologies to deliver exceptional results.",
+        "We push boundaries and cutting-edge technologies to deliver exceptional results.",
     },
     {
       icon: <Heart className="text-red-500" size={20} />,
@@ -25,7 +25,7 @@ const About: React.FC = () => {
       title: "Trust",
       amount: 0.2,
       description:
-        "Building lasting relationships through transparency, reliability, and consistent delivery.",
+        "Building relationships through transparency, reliability, and consistent delivery.",
     },
   ];
 
@@ -37,12 +37,11 @@ const About: React.FC = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-12 md:mb-16">
           <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-slate-800 mb-3 md:mb-4">
-            About EliteDesign
+            About Clams Tech Solution
           </h2>
           <p className="text-lg md:text-xl text-slate-600 max-w-3xl mx-auto leading-relaxed px-4">
-            We are a passionate team of designers and developers dedicated to
-            creating extraordinary digital experiences that make a lasting
-            impact.
+            We transform businesses into e-commerce success stories through
+            expert marketplace management and proven growth strategies.
           </p>
         </div>
 
@@ -56,20 +55,21 @@ const About: React.FC = () => {
               Our Story
             </h3>
             <p className="text-slate-600 mb-4 md:mb-6 leading-relaxed text-sm md:text-base">
-              Founded in 2020, EliteDesign emerged from a simple belief: that
-              exceptional design has the power to transform businesses and
-              create meaningful connections between brands and their audiences.
+              {`Great products, complex platforms - that's where we come in. We
+              help businesses dominate Amazon, Flipkart, Myntra, and Ajio
+              without the headaches.`}
             </p>
             <p className="text-slate-600 mb-4 md:mb-6 leading-relaxed text-sm md:text-base">
-              What started as a small team of passionate creatives has grown
-              into a full-service design agency, helping businesses across
-              industries tell their stories through compelling visual narratives
-              and user-centered experiences.
+              {`What started as helping local businesses navigate Amazon and
+              Flipkart has evolved into a comprehensive e-commerce powerhouse,
+              managing end-to-end operations for brands across Amazon, Flipkart,
+              Myntra, Ajio, and more. Today, we're the trusted growth partners
+              for businesses ready to dominate the digital marketplace.`}
             </p>
             <div className="grid grid-cols-2 gap-4 md:gap-6">
               <div className="text-center p-3 md:p-4 bg-white rounded-lg shadow-sm">
                 <div className="text-xl md:text-2xl font-bold text-blue-600 mb-1">
-                  4+
+                  2+
                 </div>
                 <div className="text-xs md:text-sm text-slate-600">
                   Years Experience
@@ -77,7 +77,7 @@ const About: React.FC = () => {
               </div>
               <div className="text-center p-3 md:p-4 bg-white rounded-lg shadow-sm">
                 <div className="text-xl md:text-2xl font-bold text-blue-600 mb-1">
-                  15+
+                  10+
                 </div>
                 <div className="text-xs md:text-sm text-slate-600">
                   Team Members
@@ -93,7 +93,7 @@ const About: React.FC = () => {
             className="relative"
           >
             <Image
-              src="/placeholder.svg"
+              src="/ourstory.png"
               alt="Our team at work"
               width={600}
               height={320}
@@ -111,7 +111,7 @@ const About: React.FC = () => {
             viewport={{ once: true, amount: 0.2 }}
           >
             <Image
-              src="/placeholder.svg"
+              src="/ourmission1edited.png"
               alt="Design process"
               width={600}
               height={320}
@@ -132,9 +132,10 @@ const About: React.FC = () => {
               </h3>
             </div>
             <p className="text-slate-600 mb-4 md:mb-6 leading-relaxed text-sm md:text-base">
-              To empower businesses with exceptional design solutions that not
-              only look stunning but drive real results and create lasting
-              value.
+              To empower businesses of all sizes to achieve their maximum
+              e-commerce potential through expert account management, strategic
+              optimization, and data-driven growth tactics that deliver
+              measurable results.
             </p>
 
             <div className="flex items-center mb-4 md:mb-6">
@@ -144,9 +145,9 @@ const About: React.FC = () => {
               </h3>
             </div>
             <p className="text-slate-600 leading-relaxed text-sm md:text-base">
-              To be the leading design agency that bridges the gap between
-              creativity and technology, setting new standards for digital
-              excellence.
+              {`To be India's most trusted e-commerce growth partner, setting the
+              standard for comprehensive marketplace management and helping
+              brands achieve sustainable online success.`}
             </p>
           </motion.div>
         </div>

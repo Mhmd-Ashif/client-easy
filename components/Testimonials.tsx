@@ -33,7 +33,7 @@ const Testimonials: React.FC = () => {
   useEffect(() => {
     if (isInView) {
       const controls1 = animate(satisfaction, 98, { duration: 3 });
-      const controls2 = animate(projects, 150, { duration: 3 });
+      const controls2 = animate(projects, 75, { duration: 3 });
       const controls3 = animate(rating, 4.9, { duration: 3 });
       const controls4 = animate(response, 24, { duration: 3 });
       return () => {

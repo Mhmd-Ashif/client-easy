@@ -75,10 +75,12 @@ const Contact: React.FC = () => {
   };
 
   const contactInfo = {
-    email: "hello@elitedesign.com",
-    phone: "+1 (555) 123-4567",
-    address: "123 Design Street, Creative District, New York, NY 10001",
-    hours: "Mon - Fri: 9:00 AM - 6:00 PM EST",
+    email: "clamstech2025@gmail.com",
+    phone: "+91 6383699040 ",
+    phone2: "+91 9600638531, +91 7397714467",
+    address:
+      "Thrill Desk Co-Working 2nd Floor, Coral Crest Complex, Alagesan Rd, Nesavaalar Colony, Saibaba Colony, Coimbatore, Tamil Nadu 641011",
+    hours: "Mon - Sat: 9:00 AM - 6:00 PM IST",
   };
 
   const services = [
@@ -177,6 +179,22 @@ const Contact: React.FC = () => {
                   </p>
                 </div>
               </motion.div>
+              <motion.div
+                whileHover={{ scale: 1.05 }}
+                className="flex items-start space-x-3 md:space-x-4"
+              >
+                <div className="bg-blue-700 p-2 md:p-3 rounded-lg flex-shrink-0">
+                  <Phone className="text-white" size={20} />
+                </div>
+                <div>
+                  <h4 className="text-white font-semibold mb-1 text-sm md:text-base">
+                    Phone Alt
+                  </h4>
+                  <p className="text-blue-100 text-sm md:text-base">
+                    {contactInfo.phone2}
+                  </p>
+                </div>
+              </motion.div>
 
               <motion.div
                 whileHover={{ scale: 1.05 }}
@@ -189,9 +207,13 @@ const Contact: React.FC = () => {
                   <h4 className="text-white font-semibold mb-1 text-sm md:text-base">
                     Address
                   </h4>
-                  <p className="text-blue-100 text-sm md:text-base">
+                  <a
+                    className="text-blue-100 text-sm md:text-base"
+                    href="https://maps.app.goo.gl/ZXtd8sVYBj6Ti2Fn6"
+                    target="_blank"
+                  >
                     {contactInfo.address}
-                  </p>
+                  </a>
                 </div>
               </motion.div>
 

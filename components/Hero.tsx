@@ -27,15 +27,15 @@ const Hero: React.FC = () => {
           className="max-w-4xl mx-auto"
         >
           <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-4 md:mb-6 leading-tight ">
-            Crafting Digital Excellence
+            Turn Your Products
             <span className="block text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-cyan-400">
-              One Design at a Time
+              Into Profit Machines
             </span>
           </h1>
 
           <p className="text-lg sm:text-xl text-blue-100 mb-6 md:mb-8 leading-relaxed max-w-2xl mx-auto px-4">
-            We transform your vision into stunning digital experiences that
-            captivate audiences and drive meaningful results for your business.
+            We handle your complete e-commerce journey on Amazon, Flipkart,
+            Myntra & Ajio and More. You focus on business, we deliver sales.
           </p>
 
           <div className="flex flex-col sm:flex-row gap-3 md:gap-4 justify-center mb-8 md:mb-12 px-4">
@@ -43,7 +43,7 @@ const Hero: React.FC = () => {
               onClick={scrollToProducts}
               className="bg-transparent border-2 border-white text-white px-6 md:px-8 py-3 md:py-4 rounded-lg font-semibold hover:bg-white hover:text-blue-900 transition-all duration-300 transform hover:scale-105 text-sm md:text-base"
             >
-              Explore Our Products & Services
+              Explore Our Services
             </button>
           </div>
 
@@ -65,7 +65,7 @@ const Hero: React.FC = () => {
                 <Users className="text-blue-400" size={20} />
               </div>
               <div className="text-xl md:text-2xl font-bold text-white">
-                100+
+                50+
               </div>
               <div className="text-blue-200 text-xs md:text-sm">
                 Happy Clients
@@ -77,7 +77,7 @@ const Hero: React.FC = () => {
                 <Award className="text-green-400" size={20} />
               </div>
               <div className="text-xl md:text-2xl font-bold text-white">
-                150+
+                75+
               </div>
               <div className="text-blue-200 text-xs md:text-sm">
                 Projects Done

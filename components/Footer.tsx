@@ -1,16 +1,7 @@
 "use client";
 
 import type React from "react";
-import {
-  Mail,
-  Phone,
-  MapPin,
-  Facebook,
-  Twitter,
-  Instagram,
-  Linkedin,
-  ArrowUp,
-} from "lucide-react";
+import { Mail, Phone, MapPin, Instagram, ArrowUp } from "lucide-react";
 import { usePathname } from "next/navigation";
 
 const Footer: React.FC = () => {
@@ -58,36 +49,19 @@ const Footer: React.FC = () => {
           {/* Company Info */}
           <div className="lg:col-span-1">
             <h3 className="text-xl md:text-2xl font-bold mb-3 md:mb-4">
-              EliteDesign
+              Clams Tech Solution
             </h3>
             <p className="text-slate-300 mb-4 md:mb-6 leading-relaxed text-sm md:text-base">
-              Creating exceptional digital experiences that transform businesses
-              and connect brands with their audiences.
+              We transform businesses into e-commerce success stories through
+              expert marketplace management and proven growth strategies.
             </p>
-            <div className="flex space-x-3 md:space-x-4">
+            <div className="flex flex-col">
+              <h4 className="font-semibold items-center mb-2">Our Socials</h4>
               <a
-                href="#"
-                className="bg-slate-800 p-2 rounded-lg hover:bg-blue-600 transition-colors duration-300"
-              >
-                <Facebook size={16} className="md:w-5 md:h-5" />
-              </a>
-              <a
-                href="#"
-                className="bg-slate-800 p-2 rounded-lg hover:bg-blue-600 transition-colors duration-300"
-              >
-                <Twitter size={16} className="md:w-5 md:h-5" />
-              </a>
-              <a
-                href="#"
-                className="bg-slate-800 p-2 rounded-lg hover:bg-blue-600 transition-colors duration-300"
+                href="https://www.instagram.com/clams_tech/"
+                className="bg-slate-800 p-2 w-8 md:w-9 rounded-lg hover:bg-blue-600 transition-colors duration-300"
               >
                 <Instagram size={16} className="md:w-5 md:h-5" />
-              </a>
-              <a
-                href="#"
-                className="bg-slate-800 p-2 rounded-lg hover:bg-blue-600 transition-colors duration-300"
-              >
-                <Linkedin size={16} className="md:w-5 md:h-5" />
               </a>
             </div>
           </div>
@@ -138,24 +112,29 @@ const Footer: React.FC = () => {
                   className="text-blue-400 mt-1 flex-shrink-0"
                   size={14}
                 />
-                <span className="text-slate-300 text-xs md:text-sm">
-                  123 Design Street
+                <a
+                  className="text-slate-300 text-xs md:text-sm"
+                  href="https://maps.app.goo.gl/ZXtd8sVYBj6Ti2Fn6"
+                  target="_blank"
+                >
+                  Thrill Desk Co-Working 2nd Floor,
                   <br />
-                  Creative District
+                  Coral Crest Complex, Alagesan Rd, Nesavaalar Colony, Saibaba
+                  Colony,
                   <br />
-                  New York, NY 10001
-                </span>
+                  Coimbatore, Tamil Nadu 641011
+                </a>
               </div>
               <div className="flex items-center space-x-2 md:space-x-3">
                 <Phone className="text-blue-400 flex-shrink-0" size={14} />
                 <span className="text-slate-300 text-xs md:text-sm">
-                  +1 (555) 123-4567
+                  +91 6383699040
                 </span>
               </div>
               <div className="flex items-center space-x-2 md:space-x-3">
                 <Mail className="text-blue-400 flex-shrink-0" size={14} />
                 <span className="text-slate-300 text-xs md:text-sm">
-                  hello@elitedesign.com
+                  clamstech2025@gmail.com
                 </span>
               </div>
             </div>
@@ -165,7 +144,7 @@ const Footer: React.FC = () => {
         <div className="border-t border-slate-800 mt-8 md:mt-12 pt-6 md:pt-8">
           <div className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
             <p className="text-slate-400 text-xs md:text-sm text-center md:text-left">
-              © {currentYear} EliteDesign. All rights reserved.
+              © {currentYear} Clams Tech Solution . All rights reserved.
             </p>
             <div className="flex items-center space-x-4 md:space-x-6">
               <button
