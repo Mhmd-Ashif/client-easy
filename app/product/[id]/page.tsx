@@ -24,8 +24,7 @@ export default function ServiceDetail() {
         "End-to-end management of your Amazon, Flipkart, Myntra & Ajio accounts with optimized listings and strategic growth.",
       longDescription:
         "Our comprehensive account management service takes care of every aspect of your e-commerce presence across major platforms. From initial setup to ongoing optimization, we ensure your products are positioned for maximum visibility and sales. Our team of experts manages your accounts daily, handling everything from inventory updates to customer service coordination.",
-      image:
-        "https://images.pexels.com/photos/230544/pexels-photo-230544.jpeg?auto=compress&cs=tinysrgb&w=1200",
+      image: "/p1p.png",
       features: [
         "Product Listing Optimization",
         "Inventory Management",
@@ -57,8 +56,7 @@ export default function ServiceDetail() {
         "Data-driven advertising and marketing strategies that maximize your ROI across all major e-commerce platforms.",
       longDescription:
         "Our growth and marketing services are designed to scale your e-commerce business through strategic advertising and marketing campaigns. We use advanced analytics and market insights to create campaigns that not only drive traffic but convert visitors into loyal customers. Our approach is data-driven, ensuring every marketing dollar is optimized for maximum return on investment.",
-      image:
-        "https://images.pexels.com/photos/590016/pexels-photo-590016.jpeg?auto=compress&cs=tinysrgb&w=1200",
+      image: "/p2p.png",
       features: [
         "PPC Campaign Management",
         "SEO Optimization",
@@ -170,10 +168,13 @@ export default function ServiceDetail() {
 
             <div className="relative">
               <Image
-                src={"/placeholder.svg"}
+                src={service.image || "/placeholder.svg"}
                 alt={"E-commerce Service"}
-                width={100}
-                height={100}
+                width={800}
+                height={600}
+                quality={95}
+                priority={true}
+                sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                 className="rounded-lg shadow-2xl w-full h-64 md:h-80 object-cover"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-blue-900/20 to-transparent rounded-lg"></div>

@@ -19,7 +19,7 @@ const Products: React.FC = () => {
       name: "Complete Account Management",
       description:
         "End-to-end management of your Amazon, Flipkart, Myntra & Ajio accounts with optimized listings and strategic growth.",
-      image: "/placeholder.svg",
+      image: "/p1E.jpg",
       features: [
         "Product Listing Optimization",
         "Inventory Management",
@@ -32,7 +32,7 @@ const Products: React.FC = () => {
       name: "Growth & Marketing Services",
       description:
         "Data-driven advertising and marketing strategies that maximize your ROI across all major e-commerce platforms.",
-      image: "/placeholder.svg",
+      image: "/p2E.jpg",
       features: [
         "PPC Campaign Management",
         "SEO Optimization",
@@ -65,9 +65,16 @@ const Products: React.FC = () => {
                 <Image
                   src={product.image || "/placeholder.svg"}
                   alt={product.name}
-                  width={100}
-                  height={100}
+                  width={800}
+                  height={600}
+                  quality={95}
+                  priority={product.id === 1}
+                  sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                   className="w-full h-40 md:h-48 object-cover group-hover:scale-110 transition-transform duration-500"
+                  style={{
+                    objectFit: "cover",
+                    objectPosition: "center",
+                  }}
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
                 <div className="absolute top-3 md:top-4 right-3 md:right-4 bg-yellow-400 text-slate-800 px-2 py-1 rounded-full text-xs font-semibold flex items-center gap-1">
