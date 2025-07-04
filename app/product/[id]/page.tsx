@@ -4,6 +4,7 @@ import {
   ArrowLeft,
   Check,
   Clock,
+  Users,
   Award,
   TrendingUp,
   Target,
@@ -178,6 +179,176 @@ export default function ServiceDetail() {
               />
               <div className="absolute inset-0 bg-gradient-to-t from-blue-900/20 to-transparent rounded-lg"></div>
             </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Timeline Explanation Section */}
+      <section className="py-12 md:py-20 bg-blue-50">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="bg-white rounded-xl shadow-lg p-6 md:p-8 mb-8 md:mb-12">
+            <h2 className="text-2xl md:text-3xl font-bold text-slate-800 mb-6 text-center">
+              Understanding Our Service Timeline
+            </h2>
+
+            {service.id === 1 ? (
+              <div className="space-y-6">
+                <div className="flex items-start gap-3">
+                  <div className="bg-blue-600 text-white px-3 py-1 rounded-full text-sm font-semibold">
+                    🛠️
+                  </div>
+                  <div>
+                    <h3 className="text-xl font-bold text-slate-800 mb-2">
+                      Complete Account Management
+                    </h3>
+                    <p className="text-blue-600 font-semibold mb-3">
+                      Timeline: Ongoing monthly service
+                    </p>
+                    <p className="text-slate-600 mb-4">
+                      This is a <strong>continuous, long-term service</strong>{" "}
+                      that operates on a <strong>month-to-month basis</strong>.
+                      There's no fixed end date — instead, it's a recurring
+                      partnership where the service is consistently delivered
+                      every month.
+                    </p>
+                  </div>
+                </div>
+
+                <div className="grid grid-cols-1 md:grid-cols-3 gap-4 md:gap-6">
+                  <div className="bg-gray-50 p-4 rounded-lg">
+                    <h4 className="font-semibold text-slate-800 mb-2">
+                      Month 1 – Onboarding & Setup
+                    </h4>
+                    <ul className="text-sm text-slate-600 space-y-1">
+                      <li>• Initial consultation and goal setting</li>
+                      <li>• Complete account setup/audit</li>
+                      <li>• Optimized product listings upload</li>
+                      <li>• Brand storefront design</li>
+                    </ul>
+                  </div>
+
+                  <div className="bg-gray-50 p-4 rounded-lg">
+                    <h4 className="font-semibold text-slate-800 mb-2">
+                      Month 2 & Onward – Optimization
+                    </h4>
+                    <ul className="text-sm text-slate-600 space-y-1">
+                      <li>• Daily account monitoring</li>
+                      <li>• Inventory sync and alerts</li>
+                      <li>• Review management</li>
+                      <li>• Strategy updates</li>
+                    </ul>
+                  </div>
+
+                  <div className="bg-gray-50 p-4 rounded-lg">
+                    <h4 className="font-semibold text-slate-800 mb-2">
+                      Every Month – Reporting
+                    </h4>
+                    <ul className="text-sm text-slate-600 space-y-1">
+                      <li>• Monthly performance reports</li>
+                      <li>• Campaign and listing reviews</li>
+                      <li>• Improvement suggestions</li>
+                      <li>• New growth opportunities</li>
+                    </ul>
+                  </div>
+                </div>
+
+                <div className="bg-green-50 p-4 rounded-lg">
+                  <p className="text-green-800 font-semibold">
+                    ✅ This model is ideal for businesses looking for{" "}
+                    <strong>hands-free, expert-led account handling</strong>{" "}
+                    across multiple e-commerce platforms.
+                  </p>
+                </div>
+              </div>
+            ) : (
+              <div className="space-y-6">
+                <div className="flex items-start gap-3">
+                  <div className="bg-blue-600 text-white px-3 py-1 rounded-full text-sm font-semibold">
+                    📈
+                  </div>
+                  <div>
+                    <h3 className="text-xl font-bold text-slate-800 mb-2">
+                      Growth & Marketing Services
+                    </h3>
+                    <p className="text-blue-600 font-semibold mb-3">
+                      Timeline: 3–6 months for optimal results
+                    </p>
+                    <p className="text-slate-600 mb-4">
+                      This is a <strong>short-to-medium term engagement</strong>{" "}
+                      designed to deliver measurable marketing growth. It
+                      typically runs for <strong>3 to 6 months</strong>, during
+                      which advertising strategies are tested, refined, and
+                      scaled.
+                    </p>
+                  </div>
+                </div>
+
+                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6">
+                  <div className="bg-gray-50 p-4 rounded-lg">
+                    <h4 className="font-semibold text-slate-800 mb-2">
+                      Week 1–2 – Strategy & Setup
+                    </h4>
+                    <ul className="text-sm text-slate-600 space-y-1">
+                      <li>• Market and competitor analysis</li>
+                      <li>• PPC campaign setup</li>
+                      <li>• Keyword research</li>
+                      <li>• SEO audit</li>
+                    </ul>
+                  </div>
+
+                  <div className="bg-gray-50 p-4 rounded-lg">
+                    <h4 className="font-semibold text-slate-800 mb-2">
+                      Month 1 – Testing & Optimization
+                    </h4>
+                    <ul className="text-sm text-slate-600 space-y-1">
+                      <li>• Launch A/B tested ads</li>
+                      <li>• Monitor ROI metrics</li>
+                      <li>• SEO adjustments</li>
+                      <li>• Performance tracking</li>
+                    </ul>
+                  </div>
+
+                  <div className="bg-gray-50 p-4 rounded-lg">
+                    <h4 className="font-semibold text-slate-800 mb-2">
+                      Month 2–3 – Scaling Campaigns
+                    </h4>
+                    <ul className="text-sm text-slate-600 space-y-1">
+                      <li>• Scale best-performing ads</li>
+                      <li>• Adjust budgets for high-ROI</li>
+                      <li>• Integrate customer feedback</li>
+                      <li>• Expand reach</li>
+                    </ul>
+                  </div>
+
+                  <div className="bg-gray-50 p-4 rounded-lg md:col-span-2 lg:col-span-2">
+                    <h4 className="font-semibold text-slate-800 mb-2">
+                      Month 4–6 – Sustained Growth
+                    </h4>
+                    <ul className="text-sm text-slate-600 space-y-1">
+                      <li>
+                        • Fine-tune ongoing campaigns • Expand into seasonal
+                        campaigns
+                      </li>
+                      <li>
+                        • Focus on revenue growth and cost-efficiency • Optimize
+                        for long-term success
+                      </li>
+                    </ul>
+                  </div>
+
+                  <div className="bg-gray-50 p-4 rounded-lg">
+                    <h4 className="font-semibold text-slate-800 mb-2">
+                      Ongoing Options
+                    </h4>
+                    <ul className="text-sm text-slate-600 space-y-1">
+                      <li>• Extended retainer model</li>
+                      <li>• Continuous optimization</li>
+                      <li>• Long-term partnership</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            )}
           </div>
         </div>
       </section>
