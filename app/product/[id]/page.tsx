@@ -4,7 +4,6 @@ import {
   ArrowLeft,
   Check,
   Clock,
-  Users,
   Award,
   TrendingUp,
   Target,
@@ -205,11 +204,11 @@ export default function ServiceDetail() {
                       Timeline: Ongoing monthly service
                     </p>
                     <p className="text-slate-600 mb-4">
-                      This is a <strong>continuous, long-term service</strong>{" "}
+                      {`This is a <strong>continuous, long-term service</strong>{" "}
                       that operates on a <strong>month-to-month basis</strong>.
                       There's no fixed end date — instead, it's a recurring
                       partnership where the service is consistently delivered
-                      every month.
+                      every month.`}
                     </p>
                   </div>
                 </div>
