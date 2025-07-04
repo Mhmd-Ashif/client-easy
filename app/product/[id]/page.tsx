@@ -114,7 +114,7 @@ export default function ServiceDetail() {
   return (
     <div className="min-h-screen bg-gray-50">
       {/* Hero Section */}
-      <section className="bg-gradient-to-br from-blue-900 to-slate-800 text-white py-12 md:py-20">
+      <section className="bg-gradient-to-br from-slate-800 via-slate-900 to-slate-950 text-white py-12 md:py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <button
             onClick={() => router.push("/")}
@@ -542,7 +542,7 @@ export default function ServiceDetail() {
       </section>
 
       {/* CTA Section */}
-      <section className="py-12 md:py-20 bg-gradient-to-br from-blue-900 to-slate-800 text-white">
+      <section className="py-12 md:py-20 bg-gradient-to-br from-slate-800 via-slate-900 to-slate-950 text-white">
         <div className="max-w-4xl mx-auto text-center px-4 sm:px-6 lg:px-8">
           <h2 className="text-2xl md:text-3xl font-bold mb-3 md:mb-4">
             Ready to Scale Your E-commerce Business?

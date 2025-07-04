@@ -91,10 +91,7 @@ const Contact: React.FC = () => {
 
   if (isSubmitted) {
     return (
-      <section
-        id="contact"
-        className="py-12 md:py-20 bg-gradient-to-br from-blue-900 to-slate-800"
-      >
+      <section id="contact" className="py-12 md:py-20 ">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="max-w-md mx-auto text-center bg-white rounded-2xl shadow-xl p-6 md:p-8">
             <CheckCircle className="text-green-500 mx-auto mb-4" size={48} />
@@ -112,10 +109,7 @@ const Contact: React.FC = () => {
   }
 
   return (
-    <section
-      id="contact"
-      className="py-12 md:py-20 bg-gradient-to-br from-blue-900 to-slate-800"
-    >
+    <section id="contact" className="py-12 md:py-20 ">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-12 md:mb-16">
           <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-white mb-3 md:mb-4">
@@ -243,7 +237,7 @@ const Contact: React.FC = () => {
                 <div>
                   <label
                     htmlFor="name"
-                    className="block text-sm font-semibold text-slate-700 mb-2"
+                    className="block text-sm font-semibold text-slate-900 mb-2"
                   >
                     Full Name *
                   </label>
@@ -254,7 +248,7 @@ const Contact: React.FC = () => {
                     value={formData.name}
                     onChange={handleInputChange}
                     required
-                    className="w-full px-3 md:px-4 py-2 md:py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-colors duration-300 text-sm md:text-base"
+                    className="w-full px-3 md:px-4 py-2 md:py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-colors duration-300 text-sm md:text-base text-black"
                     placeholder="John Doe"
                   />
                 </div>
@@ -273,7 +267,7 @@ const Contact: React.FC = () => {
                     value={formData.email}
                     onChange={handleInputChange}
                     required
-                    className="w-full px-3 md:px-4 py-2 md:py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-colors duration-300 text-sm md:text-base"
+                    className="w-full px-3 md:px-4 py-2 md:py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-colors duration-300 text-sm md:text-base text-black"
                     placeholder="john@example.com"
                   />
                 </div>
@@ -294,7 +288,7 @@ const Contact: React.FC = () => {
                     value={formData.company}
                     onChange={handleInputChange}
                     required
-                    className="w-full px-3 md:px-4 py-2 md:py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-colors duration-300 text-sm md:text-base"
+                    className="w-full px-3 md:px-4 py-2 md:py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-colors duration-300 text-sm md:text-base text-black"
                     placeholder="Your Company"
                   />
                 </div>
@@ -312,7 +306,7 @@ const Contact: React.FC = () => {
                     name="service"
                     value={formData.service}
                     onChange={handleInputChange}
-                    className="w-full px-3 md:px-4 py-2 md:py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-colors duration-300 text-sm md:text-base"
+                    className="w-full px-3 md:px-4 py-2 md:py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-colors duration-300 text-sm md:text-base text-black"
                   >
                     <option value="">Select a service</option>
                     {services.map((service) => (
@@ -338,7 +332,7 @@ const Contact: React.FC = () => {
                   onChange={handleInputChange}
                   required
                   rows={4}
-                  className="w-full px-3 md:px-4 py-2 md:py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-colors duration-300 resize-none text-sm md:text-base"
+                  className="w-full px-3 md:px-4 py-2 md:py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-colors duration-300 resize-none text-sm md:text-base text-black"
                   placeholder="Tell us about your project, goals, timeline, and any specific requirements..."
                 />
               </div>
