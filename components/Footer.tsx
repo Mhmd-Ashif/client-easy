@@ -21,12 +21,8 @@ const Footer: React.FC = () => {
   ];
 
   const services = [
-    "Brand Identity Design",
-    "Website Development",
-    "UI/UX Design",
-    "E-commerce Solutions",
-    "Digital Marketing",
-    "Print Design",
+    "Complete Account Management",
+    "Growth & Marketing Services",
   ];
 
   const scrollToSection = (href: string) => {

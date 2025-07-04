@@ -1,224 +1,101 @@
 "use client";
 import { useParams, useRouter } from "next/navigation";
-import { ArrowLeft, Check, Clock, Users, Award } from "lucide-react";
+import {
+  ArrowLeft,
+  Check,
+  Clock,
+  Award,
+  TrendingUp,
+  Target,
+} from "lucide-react";
 import { Suspense } from "react";
 import Image from "next/image";
 
-export default function ProductDetail() {
+export default function ServiceDetail() {
   const params = useParams();
   const router = useRouter();
   const id = params.id as string;
 
-  const products = [
+  const services = [
     {
       id: 1,
-      name: "Brand Identity Suite",
+      name: "Complete Account Management",
       description:
-        "Complete brand identity package including logo design, brand guidelines, business cards, and digital assets.",
+        "End-to-end management of your Amazon, Flipkart, Myntra & Ajio accounts with optimized listings and strategic growth.",
       longDescription:
-        "Our comprehensive Brand Identity Suite is designed to establish a strong, cohesive visual identity for your business. We work closely with you to understand your brand values, target audience, and market positioning to create a unique identity that resonates with your customers and stands out in the marketplace.",
+        "Our comprehensive account management service takes care of every aspect of your e-commerce presence across major platforms. From initial setup to ongoing optimization, we ensure your products are positioned for maximum visibility and sales. Our team of experts manages your accounts daily, handling everything from inventory updates to customer service coordination.",
       image:
-        "https://images.pexels.com/photos/196644/pexels-photo-196644.jpeg?auto=compress&cs=tinysrgb&w=1200",
+        "https://images.pexels.com/photos/230544/pexels-photo-230544.jpeg?auto=compress&cs=tinysrgb&w=1200",
       features: [
-        "Logo Design",
-        "Brand Guidelines",
-        "Business Stationery",
-        "Digital Assets",
+        "Product Listing Optimization",
+        "Inventory Management",
+        "Ad Campaign Management",
+        "Account Setup & Optimization",
       ],
       detailedFeatures: [
-        "Custom logo design with multiple variations",
-        "Comprehensive brand guidelines document",
-        "Business card and letterhead design",
-        "Social media profile templates",
-        "Email signature design",
-        "Brand color palette and typography guide",
-        "Logo usage guidelines and restrictions",
-        "Vector and raster file formats provided",
+        "Complete account setup and verification across all platforms",
+        "Product listing creation with SEO-optimized titles and descriptions",
+        "High-quality product photography and image optimization",
+        "Inventory tracking and automated restocking alerts",
+        "Daily account monitoring and performance tracking",
+        "Customer review management and response",
+        "Brand storefront design and optimization",
+        "Compliance management for platform policies",
+        "Regular reporting and analytics insights",
+        "24/7 account monitoring and issue resolution",
       ],
-      price: "Starting at $2,500",
-      timeline: "2-3 weeks",
-      revisions: "3 rounds included",
+      timeline: "Ongoing monthly service",
+      revisions: "Unlimited optimizations",
       deliverables:
-        "Logo files, Brand guidelines, Stationery designs, Digital assets",
+        "Fully managed accounts, Monthly reports, Performance analytics, Optimization recommendations",
+      platforms: ["Amazon", "Flipkart", "Myntra", "Ajio"],
     },
     {
       id: 2,
-      name: "Website Design & Development",
+      name: "Growth & Marketing Services",
       description:
-        "Custom website design and development with responsive layouts, modern aesthetics, and optimal user experience.",
+        "Data-driven advertising and marketing strategies that maximize your ROI across all major e-commerce platforms.",
       longDescription:
-        "Our website design and development service creates stunning, functional websites that not only look amazing but also perform exceptionally well. We focus on user experience, mobile responsiveness, and search engine optimization to ensure your website drives results for your business.",
+        "Our growth and marketing services are designed to scale your e-commerce business through strategic advertising and marketing campaigns. We use advanced analytics and market insights to create campaigns that not only drive traffic but convert visitors into loyal customers. Our approach is data-driven, ensuring every marketing dollar is optimized for maximum return on investment.",
       image:
-        "https://images.pexels.com/photos/196644/pexels-photo-196644.jpeg?auto=compress&cs=tinysrgb&w=1200",
+        "https://images.pexels.com/photos/590016/pexels-photo-590016.jpeg?auto=compress&cs=tinysrgb&w=1200",
       features: [
-        "Responsive Design",
-        "Custom Development",
+        "PPC Campaign Management",
         "SEO Optimization",
-        "CMS Integration",
+        "Performance Analytics",
+        "Revenue Growth Strategy",
       ],
       detailedFeatures: [
-        "Custom responsive web design",
-        "Mobile-first development approach",
-        "Content Management System integration",
-        "Search Engine Optimization (SEO)",
-        "Performance optimization",
-        "Cross-browser compatibility",
-        "SSL certificate setup",
-        "Google Analytics integration",
-        "Contact forms and lead capture",
-        "30 days of post-launch support",
+        "Strategic PPC campaign setup and management",
+        "Keyword research and optimization for maximum visibility",
+        "Ad copy creation and A/B testing for better conversion",
+        "Budget optimization and bid management",
+        "Product SEO optimization for organic ranking",
+        "Competitor analysis and market research",
+        "Performance tracking with detailed analytics",
+        "Revenue optimization strategies",
+        "Customer acquisition cost optimization",
+        "Conversion rate optimization across all touchpoints",
+        "Seasonal campaign planning and execution",
+        "Multi-platform advertising coordination",
       ],
-      price: "Starting at $5,000",
-      timeline: "4-6 weeks",
-      revisions: "2 rounds included",
+      timeline: "3-6 months for optimal results",
+      revisions: "Continuous optimization",
       deliverables:
-        "Fully functional website, CMS training, SEO setup, Analytics configuration",
-    },
-    {
-      id: 3,
-      name: "UI/UX Design Services",
-      description:
-        "User-centered design solutions for mobile apps and web applications with focus on usability and conversion.",
-      longDescription:
-        "Our UI/UX design services focus on creating intuitive, user-friendly interfaces that provide exceptional user experiences. We conduct thorough research, create detailed wireframes and prototypes, and test our designs to ensure they meet both user needs and business objectives.",
-      image:
-        "https://images.pexels.com/photos/196644/pexels-photo-196644.jpeg?auto=compress&cs=tinysrgb&w=1200",
-      features: [
-        "User Research",
-        "Wireframing",
-        "Prototyping",
-        "Usability Testing",
-      ],
-      detailedFeatures: [
-        "User research and persona development",
-        "Information architecture planning",
-        "Wireframing and user flow mapping",
-        "High-fidelity mockups and prototypes",
-        "Interactive prototype development",
-        "Usability testing and feedback integration",
-        "Design system creation",
-        "Responsive design considerations",
-        "Accessibility compliance (WCAG)",
-        "Developer handoff documentation",
-      ],
-      price: "Starting at $3,500",
-      timeline: "3-5 weeks",
-      revisions: "2 rounds included",
-      deliverables:
-        "Design files, Prototypes, Design system, Developer documentation",
-    },
-    {
-      id: 4,
-      name: "E-commerce Solutions",
-      description:
-        "Complete e-commerce platform design and development with payment integration and inventory management.",
-      longDescription:
-        "Our e-commerce solutions provide everything you need to sell online successfully. From beautiful storefront designs to robust backend functionality, we create online stores that are easy to manage and provide excellent shopping experiences for your customers.",
-      image:
-        "https://images.pexels.com/photos/196644/pexels-photo-196644.jpeg?auto=compress&cs=tinysrgb&w=1200",
-      features: [
-        "Online Store Design",
-        "Payment Integration",
-        "Inventory Management",
-        "Analytics Setup",
-      ],
-      detailedFeatures: [
-        "Custom e-commerce website design",
-        "Product catalog setup and management",
-        "Shopping cart and checkout optimization",
-        "Payment gateway integration (Stripe, PayPal)",
-        "Inventory management system",
-        "Order management and tracking",
-        "Customer account functionality",
-        "Email marketing integration",
-        "SEO optimization for products",
-        "Mobile commerce optimization",
-        "Security and SSL implementation",
-        "Analytics and reporting setup",
-      ],
-      price: "Starting at $7,500",
-      timeline: "6-8 weeks",
-      revisions: "2 rounds included",
-      deliverables:
-        "Complete e-commerce website, Admin training, Payment setup, Analytics configuration",
-    },
-    {
-      id: 5,
-      name: "Digital Marketing Assets",
-      description:
-        "Social media graphics, email templates, banner ads, and other digital marketing materials.",
-      longDescription:
-        "Our digital marketing assets service provides you with a comprehensive suite of marketing materials designed to maintain brand consistency across all digital channels. From social media graphics to email templates, we create assets that engage your audience and drive conversions.",
-      image:
-        "https://images.pexels.com/photos/196644/pexels-photo-196644.jpeg?auto=compress&cs=tinysrgb&w=1200",
-      features: [
-        "Social Media Graphics",
-        "Email Templates",
-        "Banner Ads",
-        "Marketing Collateral",
-      ],
-      detailedFeatures: [
-        "Social media post templates (Instagram, Facebook, LinkedIn)",
-        "Social media story templates",
-        "Email newsletter templates",
-        "Banner ads for various platforms",
-        "Digital brochures and flyers",
-        "Presentation templates",
-        "Infographic designs",
-        "Web graphics and icons",
-        "Brand-consistent color schemes",
-        "Template customization guidelines",
-      ],
-      price: "Starting at $1,200",
-      timeline: "1-2 weeks",
-      revisions: "2 rounds included",
-      deliverables:
-        "Design templates, Source files, Usage guidelines, Brand assets",
-    },
-    {
-      id: 6,
-      name: "Print Design Services",
-      description:
-        "Professional print design for brochures, flyers, posters, packaging, and other marketing materials.",
-      longDescription:
-        "Our print design services ensure your brand looks professional and consistent across all printed materials. We understand the technical requirements of print production and create designs that translate beautifully from screen to paper.",
-      image:
-        "https://images.pexels.com/photos/196644/pexels-photo-196644.jpeg?auto=compress&cs=tinysrgb&w=1200",
-      features: [
-        "Brochure Design",
-        "Packaging Design",
-        "Poster Design",
-        "Print Preparation",
-      ],
-      detailedFeatures: [
-        "Brochure and catalog design",
-        "Business card and stationery design",
-        "Poster and banner design",
-        "Packaging and label design",
-        "Trade show materials",
-        "Print-ready file preparation",
-        "Color profile optimization",
-        "Bleed and margin setup",
-        "Print vendor coordination",
-        "Quality control and proofing",
-      ],
-      price: "Starting at $800",
-      timeline: "1-3 weeks",
-      revisions: "2 rounds included",
-      deliverables:
-        "Print-ready files, Source files, Print specifications, Vendor recommendations",
+        "Campaign setup, Performance reports, ROI analysis, Growth recommendations",
+      platforms: ["Amazon Ads", "Flipkart Ads", "Google Ads", "Facebook Ads"],
     },
   ];
 
-  const product = products.find((p) => p.id === parseInt(id || "0"));
+  const service = services.find((s) => s.id === parseInt(id || "0"));
 
-  if (!product) {
+  if (!service) {
     return (
       <Suspense fallback={<p>Loading....</p>}>
         <div className="min-h-screen flex items-center justify-center">
           <div className="text-center">
             <h1 className="text-2xl font-bold text-slate-800 mb-4">
-              Product not found
+              Service not found
             </h1>
             <button
               onClick={() => router.push("/")}
@@ -234,12 +111,6 @@ export default function ProductDetail() {
 
   const scrollToContact = () => {
     router.push("/#contact");
-    // setTimeout(() => {
-    //   const element = document.querySelector("#contact");
-    //   if (element) {
-    //     element.scrollIntoView({ behavior: "smooth" });
-    //   }
-    // }, 100);
   };
 
   return (
@@ -258,42 +129,49 @@ export default function ProductDetail() {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 md:gap-12 items-center">
             <div>
               <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-4 md:mb-6">
-                {product.name}
+                {service.name}
               </h1>
               <p className="text-lg md:text-xl text-blue-100 mb-6 md:mb-8 leading-relaxed">
-                {product.longDescription}
+                {service.longDescription}
               </p>
 
               <div className="flex flex-col sm:flex-row gap-4 mb-6 md:mb-8">
                 <div className="flex items-center gap-2">
                   <Clock className="text-blue-400" size={20} />
                   <span className="text-sm md:text-base">
-                    {product.timeline}
+                    {service.timeline}
                   </span>
                 </div>
                 <div className="flex items-center gap-2">
-                  <Users className="text-blue-400" size={20} />
+                  <TrendingUp className="text-blue-400" size={20} />
                   <span className="text-sm md:text-base">
-                    {product.revisions}
+                    {service.revisions}
                   </span>
                 </div>
                 <div className="flex items-center gap-2">
                   <Award className="text-blue-400" size={20} />
                   <span className="text-sm md:text-base">
-                    Professional Quality
+                    Expert Management
                   </span>
                 </div>
               </div>
 
-              <div className="text-2xl md:text-3xl font-bold text-yellow-400 mb-6 md:mb-8">
-                {product.price}
+              <div className="flex flex-wrap gap-2 mb-6 md:mb-8">
+                {service.platforms.map((platform, index) => (
+                  <span
+                    key={index}
+                    className="bg-blue-600 text-white px-3 py-1 rounded-full text-sm"
+                  >
+                    {platform}
+                  </span>
+                ))}
               </div>
             </div>
 
             <div className="relative">
               <Image
                 src={"/placeholder.svg"}
-                alt={"Placeholder"}
+                alt={"E-commerce Service"}
                 width={100}
                 height={100}
                 className="rounded-lg shadow-2xl w-full h-64 md:h-80 object-cover"
@@ -313,7 +191,7 @@ export default function ProductDetail() {
                 {`What's Included`}
               </h2>
               <div className="space-y-3 md:space-y-4">
-                {product.detailedFeatures.map((feature, index) => (
+                {service.detailedFeatures.map((feature, index) => (
                   <div key={index} className="flex items-start gap-3">
                     <Check
                       className="text-green-500 mt-1 flex-shrink-0"
@@ -329,25 +207,25 @@ export default function ProductDetail() {
 
             <div className="bg-white rounded-xl shadow-lg p-6 md:p-8">
               <h3 className="text-xl md:text-2xl font-bold text-slate-800 mb-4 md:mb-6">
-                Project Details
+                Service Details
               </h3>
 
               <div className="space-y-4 md:space-y-6">
                 <div>
                   <h4 className="font-semibold text-slate-800 mb-2">
-                    Timeline
+                    Service Duration
                   </h4>
                   <p className="text-slate-600 text-sm md:text-base">
-                    {product.timeline}
+                    {service.timeline}
                   </p>
                 </div>
 
                 <div>
                   <h4 className="font-semibold text-slate-800 mb-2">
-                    Revisions
+                    Optimization
                   </h4>
                   <p className="text-slate-600 text-sm md:text-base">
-                    {product.revisions}
+                    {service.revisions}
                   </p>
                 </div>
 
@@ -356,17 +234,24 @@ export default function ProductDetail() {
                     Deliverables
                   </h4>
                   <p className="text-slate-600 text-sm md:text-base">
-                    {product.deliverables}
+                    {service.deliverables}
                   </p>
                 </div>
 
                 <div>
                   <h4 className="font-semibold text-slate-800 mb-2">
-                    Investment
+                    Supported Platforms
                   </h4>
-                  <p className="text-2xl font-bold text-blue-600">
-                    {product.price}
-                  </p>
+                  <div className="flex flex-wrap gap-2">
+                    {service.platforms.map((platform, index) => (
+                      <span
+                        key={index}
+                        className="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm"
+                      >
+                        {platform}
+                      </span>
+                    ))}
+                  </div>
                 </div>
               </div>
 
@@ -374,7 +259,7 @@ export default function ProductDetail() {
                 onClick={scrollToContact}
                 className="w-full bg-blue-600 text-white py-3 md:py-4 rounded-lg font-semibold hover:bg-blue-700 transition-colors duration-300 mt-6 md:mt-8 text-sm md:text-base"
               >
-                Start Your Project
+                Get Started Today
               </button>
             </div>
           </div>
@@ -389,8 +274,8 @@ export default function ProductDetail() {
               Our Process
             </h2>
             <p className="text-lg md:text-xl text-slate-600 max-w-3xl mx-auto">
-              We follow a proven process to ensure your project is delivered on
-              time and exceeds expectations.
+              We follow a proven methodology to ensure your e-commerce success
+              and maximize your return on investment.
             </p>
           </div>
 
@@ -398,27 +283,27 @@ export default function ProductDetail() {
             {[
               {
                 step: "01",
-                title: "Discovery",
+                title: "Analysis",
                 description:
-                  "We learn about your business, goals, and requirements.",
+                  "We analyze your current performance and identify growth opportunities.",
               },
               {
                 step: "02",
                 title: "Strategy",
                 description:
-                  "We develop a comprehensive strategy and project plan.",
+                  "We develop a customized strategy tailored to your business goals.",
               },
               {
                 step: "03",
-                title: "Design",
+                title: "Implementation",
                 description:
-                  "We create stunning designs that align with your brand.",
+                  "We execute the strategy with precision and attention to detail.",
               },
               {
                 step: "04",
-                title: "Delivery",
+                title: "Optimization",
                 description:
-                  "We deliver your project and provide ongoing support.",
+                  "We continuously monitor and optimize for maximum performance.",
               },
             ].map((item, index) => (
               <div key={index} className="text-center">
@@ -437,20 +322,68 @@ export default function ProductDetail() {
         </div>
       </section>
 
+      {/* Benefits Section */}
+      <section className="py-12 md:py-20 bg-gray-50">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-12 md:mb-16">
+            <h2 className="text-2xl md:text-3xl font-bold text-slate-800 mb-3 md:mb-4">
+              Why Choose Our Services?
+            </h2>
+            <p className="text-lg md:text-xl text-slate-600 max-w-3xl mx-auto">
+              We deliver measurable results that drive your e-commerce growth.
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8">
+            {[
+              {
+                icon: <Target className="text-blue-600" size={48} />,
+                title: "Expert Management",
+                description:
+                  "Our team of certified e-commerce specialists manages your accounts with proven strategies.",
+              },
+              {
+                icon: <TrendingUp className="text-green-600" size={48} />,
+                title: "Proven Results",
+                description:
+                  "We've helped businesses increase their revenue by 150% on average within 6 months.",
+              },
+              {
+                icon: <Award className="text-yellow-600" size={48} />,
+                title: "24/7 Support",
+                description:
+                  "Round-the-clock monitoring and support to ensure your business never misses an opportunity.",
+              },
+            ].map((benefit, index) => (
+              <div
+                key={index}
+                className="bg-white rounded-xl shadow-lg p-6 md:p-8 text-center"
+              >
+                <div className="flex justify-center mb-4">{benefit.icon}</div>
+                <h3 className="text-xl font-bold text-slate-800 mb-3">
+                  {benefit.title}
+                </h3>
+                <p className="text-slate-600">{benefit.description}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
       {/* CTA Section */}
       <section className="py-12 md:py-20 bg-gradient-to-br from-blue-900 to-slate-800 text-white">
         <div className="max-w-4xl mx-auto text-center px-4 sm:px-6 lg:px-8">
           <h2 className="text-2xl md:text-3xl font-bold mb-3 md:mb-4">
-            Ready to Get Started?
+            Ready to Scale Your E-commerce Business?
           </h2>
           <p className="text-lg md:text-xl text-blue-100 mb-6 md:mb-8">
-            {`Let's discuss your project and create something amazing together.`}
+            {`Let's discuss how we can help you achieve your growth goals and maximize your e-commerce potential.`}
           </p>
           <button
             onClick={scrollToContact}
             className="bg-gradient-to-r from-blue-600 to-blue-700 text-white px-6 md:px-8 py-3 md:py-4 rounded-lg font-semibold hover:from-blue-700 hover:to-blue-800 transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl text-sm md:text-base"
           >
-            Contact Us Today
+            Schedule a Free Consultation
           </button>
         </div>
       </section>

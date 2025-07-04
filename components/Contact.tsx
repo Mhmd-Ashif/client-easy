@@ -84,12 +84,8 @@ const Contact: React.FC = () => {
   };
 
   const services = [
-    "Brand Identity Design",
-    "Website Design & Dev",
-    "UI/UX Design",
-    "E-commerce Solutions",
-    "Digital Marketing Assets",
-    "Print Design",
+    "Complete Account Management",
+    "Growth & Marketing Services",
     "Other",
   ];
 

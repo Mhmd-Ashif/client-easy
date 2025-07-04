@@ -9,7 +9,6 @@ interface Product {
   description: string;
   image: string;
   features: string[];
-  price: string;
 }
 import Image from "next/image";
 
@@ -17,31 +16,29 @@ const Products: React.FC = () => {
   const products: Product[] = [
     {
       id: 1,
-      name: "Brand Identity Suite",
+      name: "Complete Account Management",
       description:
-        "Complete brand identity package including logo design, brand guidelines, business cards, and digital assets.",
+        "End-to-end management of your Amazon, Flipkart, Myntra & Ajio accounts with optimized listings and strategic growth.",
       image: "/placeholder.svg",
       features: [
-        "Logo Design",
-        "Brand Guidelines",
-        "Business Stationery",
-        "Digital Assets",
+        "Product Listing Optimization",
+        "Inventory Management",
+        "Ad Campaign Management",
+        "Account Setup & Optimization",
       ],
-      price: "Starting at $2,500",
     },
     {
       id: 2,
-      name: "Website Design & Development",
+      name: "Growth & Marketing Services",
       description:
-        "Custom website design and development with responsive layouts, modern aesthetics, and optimal user experience.",
+        "Data-driven advertising and marketing strategies that maximize your ROI across all major e-commerce platforms.",
       image: "/placeholder.svg",
       features: [
-        "Responsive Design",
-        "Custom Development",
+        "PPC Campaign Management",
         "SEO Optimization",
-        "CMS Integration",
+        "Performance Analytics",
+        "Revenue Growth Strategy",
       ],
-      price: "Starting at $5,000",
     },
   ];
 
@@ -50,7 +47,7 @@ const Products: React.FC = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-12 md:mb-16">
           <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-slate-800 mb-3 md:mb-4">
-            Our Products & Services
+            Our Services
           </h2>
           <p className="text-lg md:text-xl text-slate-600 max-w-3xl mx-auto leading-relaxed px-4">
             Comprehensive design solutions tailored to elevate your brand and
@@ -105,9 +102,6 @@ const Products: React.FC = () => {
                 </div>
 
                 <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-3">
-                  <div className="text-base md:text-lg font-bold text-blue-600">
-                    {product.price}
-                  </div>
                   <Link
                     href={`/product/${product.id}`}
                     className="bg-blue-600 text-white px-3 md:px-4 py-2 rounded-lg hover:bg-blue-700 transition-colors duration-300 flex items-center gap-2 group text-sm md:text-base w-full sm:w-auto justify-center"

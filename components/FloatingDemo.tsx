@@ -21,7 +21,7 @@ export function FloatingNavDemo() {
       icon: <BookAIcon className="h-4 w-4 text-neutral-500 dark:text-white" />,
     },
     {
-      name: "Products and Services",
+      name: "Services",
       link: "#products",
       icon: (
         <ShoppingCartIcon className="h-4 w-4 text-neutral-500 dark:text-white" />
