@@ -174,7 +174,6 @@
 
 "use client";
 import type React from "react";
-import { Star, Users, Award } from "lucide-react";
 import { motion } from "motion/react";
 import Image from "next/image";
 
