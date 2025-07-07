@@ -79,7 +79,7 @@ const Contact: React.FC = () => {
     phone: "+91 6383699040 ",
     phone2: "+91 9600638531, +91 7397714467",
     address:
-      "Thrill Desk Co-Working 2nd Floor, Coral Crest Complex, Alagesan Rd, Nesavaalar Colony, Saibaba Colony, Coimbatore, Tamil Nadu 641011",
+      "Sabol Co-works , 65, 6th St, Tatabad, Coimbatore, Tamil Nadu 641012",
     hours: "Mon - Sat: 9:00 AM - 6:00 PM IST",
   };
 
@@ -199,7 +199,7 @@ const Contact: React.FC = () => {
                   </h4>
                   <a
                     className="text-blue-100 text-sm md:text-base"
-                    href="https://maps.app.goo.gl/ZXtd8sVYBj6Ti2Fn6"
+                    href="https://maps.app.goo.gl/x7ju1Dg4WcwYfpjx6"
                     target="_blank"
                   >
                     {contactInfo.address}

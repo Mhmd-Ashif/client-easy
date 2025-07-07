@@ -50,7 +50,7 @@ const Footer: React.FC = () => {
               Clams Tech Solution
             </h3>
             <p className="text-slate-300 mb-4 md:mb-6 leading-relaxed text-sm md:text-base">
-              We transform businesses into e-commerce success stories through
+              We transform businesses into E-commerce success stories through
               expert marketplace management and proven growth strategies.
             </p>
             <div className="flex flex-col">
@@ -112,15 +112,11 @@ const Footer: React.FC = () => {
                 />
                 <a
                   className="text-slate-300 text-xs md:text-sm"
-                  href="https://maps.app.goo.gl/ZXtd8sVYBj6Ti2Fn6"
+                  href="https://maps.app.goo.gl/zNHCVofkWkVpMeW5A"
                   target="_blank"
                 >
-                  Thrill Desk Co-Working 2nd Floor,
-                  <br />
-                  Coral Crest Complex, Alagesan Rd, Nesavaalar Colony, Saibaba
-                  Colony,
-                  <br />
-                  Coimbatore, Tamil Nadu 641011
+                  Sabol Co-works, 65, 6th St, Tatabad, Coimbatore, Tamil Nadu
+                  641012
                 </a>
               </div>
               <div className="flex items-center space-x-2 md:space-x-3">

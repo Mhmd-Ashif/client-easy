@@ -40,7 +40,7 @@ const About: React.FC = () => {
             About Clams Tech Solution
           </h2>
           <p className="text-lg md:text-xl text-slate-600 max-w-3xl mx-auto leading-relaxed px-4">
-            We transform businesses into e-commerce success stories through
+            We transform businesses into E-commerce success stories through
             expert marketplace management and proven growth strategies.
           </p>
         </div>
@@ -61,7 +61,7 @@ const About: React.FC = () => {
             </p>
             <p className="text-slate-600 mb-4 md:mb-6 leading-relaxed text-sm md:text-base">
               {`What started as helping local businesses navigate Amazon and
-              Flipkart has evolved into a comprehensive e-commerce powerhouse,
+              Flipkart has evolved into a comprehensive E-commerce powerhouse,
               managing end-to-end operations for brands across Amazon, Flipkart,
               Myntra, Ajio, and more. Today, we're the trusted growth partners
               for businesses ready to dominate the digital marketplace.`}
@@ -133,7 +133,7 @@ const About: React.FC = () => {
             </div>
             <p className="text-slate-600 mb-4 md:mb-6 leading-relaxed text-sm md:text-base">
               To empower businesses of all sizes to achieve their maximum
-              e-commerce potential through expert account management, strategic
+              E-commerce potential through expert account management, strategic
               optimization, and data-driven growth tactics that deliver
               measurable results.
             </p>
@@ -145,7 +145,7 @@ const About: React.FC = () => {
               </h3>
             </div>
             <p className="text-slate-600 leading-relaxed text-sm md:text-base">
-              {`To be India's most trusted e-commerce growth partner, setting the
+              {`To be India's most trusted E-commerce growth partner, setting the
               standard for comprehensive marketplace management and helping
               brands achieve sustainable online success.`}
             </p>

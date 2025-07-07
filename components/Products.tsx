@@ -31,7 +31,7 @@ const Products: React.FC = () => {
       id: 2,
       name: "Growth & Marketing Services",
       description:
-        "Data-driven advertising and marketing strategies that maximize your ROI across all major e-commerce platforms.",
+        "Data-driven advertising and marketing strategies that maximize your ROI across all major E-commerce platforms.",
       image: "/p2E.jpg",
       features: [
         "PPC Campaign Management",

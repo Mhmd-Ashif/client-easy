@@ -23,7 +23,7 @@ export default function ServiceDetail() {
       description:
         "End-to-end management of your Amazon, Flipkart, Myntra & Ajio accounts with optimized listings and strategic growth.",
       longDescription:
-        "Our comprehensive account management service takes care of every aspect of your e-commerce presence across major platforms. From initial setup to ongoing optimization, we ensure your products are positioned for maximum visibility and sales. Our team of experts manages your accounts daily, handling everything from inventory updates to customer service coordination.",
+        "Our comprehensive account management service takes care of every aspect of your E-commerce presence across major platforms. From initial setup to ongoing optimization, we ensure your products are positioned for maximum visibility and sales. Our team of experts manages your accounts daily, handling everything from inventory updates to customer service coordination.",
       image: "/p1p.png",
       features: [
         "Product Listing Optimization",
@@ -53,9 +53,9 @@ export default function ServiceDetail() {
       id: 2,
       name: "Growth & Marketing Services",
       description:
-        "Data-driven advertising and marketing strategies that maximize your ROI across all major e-commerce platforms.",
+        "Data-driven advertising and marketing strategies that maximize your ROI across all major E-commerce platforms.",
       longDescription:
-        "Our growth and marketing services are designed to scale your e-commerce business through strategic advertising and marketing campaigns. We use advanced analytics and market insights to create campaigns that not only drive traffic but convert visitors into loyal customers. Our approach is data-driven, ensuring every marketing dollar is optimized for maximum return on investment.",
+        "Our growth and marketing services are designed to scale your E-commerce business through strategic advertising and marketing campaigns. We use advanced analytics and market insights to create campaigns that not only drive traffic but convert visitors into loyal customers. Our approach is data-driven, ensuring every marketing dollar is optimized for maximum return on investment.",
       image: "/p2p.png",
       features: [
         "PPC Campaign Management",
@@ -256,7 +256,7 @@ export default function ServiceDetail() {
                   <p className="text-green-800 font-semibold">
                     ✅ This model is ideal for businesses looking for{" "}
                     <strong>hands-free, expert-led account handling</strong>{" "}
-                    across multiple e-commerce platforms.
+                    across multiple E-commerce platforms.
                   </p>
                 </div>
               </div>
@@ -445,7 +445,7 @@ export default function ServiceDetail() {
               Our Process
             </h2>
             <p className="text-lg md:text-xl text-slate-600 max-w-3xl mx-auto">
-              We follow a proven methodology to ensure your e-commerce success
+              We follow a proven methodology to ensure your E-commerce success
               and maximize your return on investment.
             </p>
           </div>
@@ -501,7 +501,7 @@ export default function ServiceDetail() {
               Why Choose Our Services?
             </h2>
             <p className="text-lg md:text-xl text-slate-600 max-w-3xl mx-auto">
-              We deliver measurable results that drive your e-commerce growth.
+              We deliver measurable results that drive your E-commerce growth.
             </p>
           </div>
 
@@ -511,7 +511,7 @@ export default function ServiceDetail() {
                 icon: <Target className="text-blue-600" size={48} />,
                 title: "Expert Management",
                 description:
-                  "Our team of certified e-commerce specialists manages your accounts with proven strategies.",
+                  "Our team of certified E-commerce specialists manages your accounts with proven strategies.",
               },
               {
                 icon: <TrendingUp className="text-green-600" size={48} />,
@@ -548,7 +548,7 @@ export default function ServiceDetail() {
             Ready to Scale Your E-commerce Business?
           </h2>
           <p className="text-lg md:text-xl text-blue-100 mb-6 md:mb-8">
-            {`Let's discuss how we can help you achieve your growth goals and maximize your e-commerce potential.`}
+            {`Let's discuss how we can help you achieve your growth goals and maximize your E-commerce potential.`}
           </p>
           <button
             onClick={scrollToContact}
