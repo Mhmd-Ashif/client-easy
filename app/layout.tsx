@@ -41,11 +41,11 @@ export const metadata: Metadata = {
   creator: "Clams Tech Solution",
   publisher: "Clams Tech Solution",
   robots: "index, follow",
-  metadataBase: new URL("https://client-easy.vercel.app"), // Will change to your custom domain later
+  metadataBase: new URL("https://www.clamstechsolution.com"),
   openGraph: {
     type: "website",
     locale: "en_IN",
-    url: "https://client-easy.vercel.app",
+    url: "https://www.clamstechsolution.com",
     siteName: "Clams Tech Solution",
     title:
       "Clams Tech Solution - Best E-commerce Account Management Company India",
@@ -56,7 +56,7 @@ export const metadata: Metadata = {
     instagram: "https://www.instagram.com/clams_tech/",
   },
   verification: {
-    google: "add-your-google-verification-code-here",  //need to get after attaching domain
+    google: "AZCat9sce9waTCediagNq8E1VN722qavXtpWORLAF_o", //need to get after attaching domain
   },
 };
 
