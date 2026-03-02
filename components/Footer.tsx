@@ -112,17 +112,17 @@ const Footer: React.FC = () => {
                 />
                 <a
                   className="text-slate-300 text-xs md:text-sm"
-                  href="https://maps.app.goo.gl/zNHCVofkWkVpMeW5A"
+                  href="https://maps.app.goo.gl/sLkb26rs6aQcdoE8A"
                   target="_blank"
                 >
-                  Sabol Co-works, 65, 6th St, Tatabad, Coimbatore, Tamil Nadu
-                  641012
+                  624, Kangayam Road, Rakkiyapalayam Pirivu, Tirupur, Tamilnadu
+                  641604
                 </a>
               </div>
               <div className="flex items-center space-x-2 md:space-x-3">
                 <Phone className="text-blue-400 flex-shrink-0" size={14} />
                 <span className="text-slate-300 text-xs md:text-sm">
-                  +91 6383699040
+                  +91 7339489413
                 </span>
               </div>
               <div className="flex items-center space-x-2 md:space-x-3">

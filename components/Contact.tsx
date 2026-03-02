@@ -27,7 +27,7 @@ const Contact: React.FC = () => {
   const handleInputChange = (
     e: React.ChangeEvent<
       HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement
-    >
+    >,
   ) => {
     const { name, value } = e.target;
     setFormData((prev) => ({
@@ -76,10 +76,10 @@ const Contact: React.FC = () => {
 
   const contactInfo = {
     email: "clamstech2025@gmail.com",
-    phone: "+91 6383699040 ",
+    phone: "+91 7339489413 ",
     phone2: "+91 9600638531, +91 7397714467",
     address:
-      "Sabol Co-works , 65, 6th St, Tatabad, Coimbatore, Tamil Nadu 641012",
+      "624, Kangayam Road, Rakkiyapalayam Pirivu, Tirupur, Tamilnadu 641604",
     hours: "Mon - Sat: 9:00 AM - 6:00 PM IST",
   };
 
@@ -199,7 +199,7 @@ const Contact: React.FC = () => {
                   </h4>
                   <a
                     className="text-blue-100 text-sm md:text-base"
-                    href="https://maps.app.goo.gl/x7ju1Dg4WcwYfpjx6"
+                    href="https://maps.app.goo.gl/sLkb26rs6aQcdoE8A"
                     target="_blank"
                   >
                     {contactInfo.address}

@@ -238,7 +238,7 @@ const Hero: React.FC = () => {
                 />
               </div>
 
-              <div className="flex items-center justify-center h-12 w-20 bg-white backdrop-blur-sm rounded-lg p-1 ">
+              <div className="flex items-center  h-12 w-20 bg-white backdrop-blur-sm rounded-lg p-1 ">
                 <Image
                   src="https://cdn.brandfetch.io/idHyb4lJuH/w/820/h/206/theme/dark/logo.png?c=1dxbfHSJFAPEGdCLU4o5B"
                   alt="Flipkart Logo"
